@@ -6,9 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Портфолио</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.17.1/matter.min.js"></script>
+
+
 </head>
 <body>
-    <!-- Навигация -->
     <header>
         <nav>
             <ul>
@@ -20,7 +22,6 @@
         </nav>
     </header>
 
-    <!-- Главная секция -->
     <section id="about" class="section">
         <div class="container">
             <h1>Привет, я Наиль</h1>
@@ -36,7 +37,6 @@
         </div>
     </section>
 
-    <!-- Навыки -->
     <section id="skills" class="section">
         <div class="container">
             <h2>Мои навыки</h2>
@@ -62,7 +62,6 @@
         </div>
     </section>
 
-    <!-- Проекты -->
     <section id="projects" class="section">
         <div class="container">
             <h2>Мои проекты</h2>
@@ -87,26 +86,27 @@
         </div>
     </section>
 
-    <!-- Контакты -->
     <section id="contact" class="section">
         <h2>Лютый game</h2>
+        <button id="amazingButton">Amazing!!</button>
         <div class="game">
             
             <div id="dino"></div>
   <div id="cactus"></div>
 </div>
 <div class="score" id="score">Score: 0</div>
-<!-- Start and Restart Buttons -->
 <div class="controls">
   <button id="startBtn">Начать игру</button>
   <button id="restartBtn" style="display: none;">Рестарт</button>
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 NNS. Все права защищены.</p>
-    </footer>
+<button id="scrollToTopBtn" class="scroll-to-top">Вверх</button>
+
 
     <script src="script.js"></script>
+    <footer>
+        <p>&copy; 2024 NNS. <a href="https://t.me/o_nstsv">@o_nstsv</a></p>
+    </footer>
 </body>
 </html>

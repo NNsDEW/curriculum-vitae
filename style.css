@@ -9,6 +9,9 @@ body {
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
+    margin: 0; /* дел отступы */
+    padding: 0; /* дел отступы */
+    overflow-x: hidden; /* Откл. гориз. прокрутку */
 }
 
 header {
@@ -110,7 +113,7 @@ footer {
     border: 1px solid rgb(122, 122, 122);
     margin: auto;
     position: relative;
-    overflow: hidden;
+    overflow: a;
   }
   
   #dino {
@@ -124,12 +127,12 @@ footer {
   }
   
   .jump {
-    animation: jump 0.5s linear; /* Увеличиваем длительность анимации прыжка */
+    animation: jump 0.5s linear; 
   }
   
   @keyframes jump {
     0% { bottom: 0; }
-    50% { bottom: 120px; } /* Увеличиваем высоту прыжка */
+    50% { bottom: 120px; } 
     100% { bottom: 0; }
   }
   
@@ -168,3 +171,48 @@ footer {
     margin: 20px 0;
   }
   
+footer a {
+    color: #ff4500; 
+    text-decoration: none; 
+}
+
+footer a:hover {
+    color: #ff6347; 
+}
+
+#amazingButton {
+    position: fixed; 
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #34f0f0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #333;
+}
+#amazingButton:hover {
+    background-color: #28b5b5; 
+}
+
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: none; 
+    z-index: 1000; 
+    transition: opacity 0.3s ease;
+}
+
+.scroll-to-top:hover {
+    background-color: #2980b9;
+}
