@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.section {
+    padding: 60px 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+p {
+    text-align: center;
+}
+
+.skills-grid, .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.skill-item, .project-item {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.game {
+    width: 600px;
+    height: 200px;
+    border: 1px solid rgb(122, 122, 122);
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  #dino {
+    width: 50px;
+    height: 50px;
+    background-image: url(img/trex.png);
+    background-size: 50px 50px;
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+  }
+  
+  .jump {
+    animation: jump 0.5s linear; /* Увеличиваем длительность анимации прыжка */
+  }
+  
+  @keyframes jump {
+    0% { bottom: 0; }
+    50% { bottom: 120px; } /* Увеличиваем высоту прыжка */
+    100% { bottom: 0; }
+  }
+  
+  #cactus {
+    width: 20px;
+    height: 40px;
+    background-image: url("img/cactus.png");
+    background-size: 20px 40px;
+    position: absolute;
+    bottom: 0;
+    left: 580px;
+    animation: moveCactus 2s infinite linear;
+  }
+  
+  @keyframes moveCactus {
+    0% { left: 580px; }
+    100% { left: -20px; }
+  }
+  
+  
+  .controls {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  
+  .score {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0;
+  }
+  

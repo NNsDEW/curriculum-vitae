@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Навигация -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#skills">Навыки</a></li>
+                <li><a href="#projects">Проекты</a></li>
+                <li><a href="#contact">Игра</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Главная секция -->
+    <section id="about" class="section">
+        <div class="container">
+            <h1>Привет, я Наиль</h1>
+            <p>Я специализируюсь на разработке как Frontend, так и Backend,
+                 что позволяет мне создавать полноценные веб-приложения с нуля.
+                  В своей работе использую HTML и CSS для создания отзывчивых и
+                   стильных интерфейсов. JavaScript добавляет интерактивность и 
+                   динамику на стороне клиента, а C++, Python и C# позволяют эффективно
+                    разрабатывать серверную логику и поддерживать высокую производительность 
+                    приложений. Моё стремление к качественному коду и глубокие знания технологий
+                     помогают мне решать сложные задачи и создавать решения, которые работают стабильно
+                      и надёжно.</p>
+        </div>
+    </section>
+
+    <!-- Навыки -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Мои навыки</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <h3>HTML & CSS</h3>
+                    <p>Отличные знания семантической верстки и адаптивного дизайна.</p>
+                </div>
+                <div class="skill-item">
+                    <h3>JavaScript</h3>
+                    <p>Опыт работы с ES6+, создание динамических веб-приложений.</p>
+                </div>
+        
+                <div class="skill-item">
+                    <h3>C++</h3>
+                    <p>Опыт работы с C++, включая ООП, шаблоны и стандартную библиотеку.</p>
+                </div>
+                <div class="skill-item">
+                    <h3>Python</h3>
+                    <p>Использование Python для автоматизации и обработки данных</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Проекты -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Мои проекты</h2>
+            <div class="project-grid">
+                <div class="project-item">
+                    <h3>Проект PyPaint</h3>
+                    <p> простой графический редактор, разработанный 
+                        на языке программирования Python с использованием 
+                        библиотеки Tkinter. <a href="https://github.com/NNsDEW/pyPaint-v1.1?tab=readme-ov-file">Посмотреть</a></p>
+                </div>
+                <div class="project-item">
+                    <h3>
+                        Проект Маркетплейс
+                    </h3>
+                    <p>Веб-маркетплейс на HTML, CSS и JavaScript, 
+                        где пользователи могут просматривать товары, 
+                        добавлять их в корзину, пользоваться профилем 
+                        и осуществлять поиск. <a href="https://github.com/NNsDEW/marketplace1.git">Посмотреть</a></p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact" class="section">
+        <h2>Лютый game</h2>
+        <div class="game">
+            
+            <div id="dino"></div>
+  <div id="cactus"></div>
+</div>
+<div class="score" id="score">Score: 0</div>
+<!-- Start and Restart Buttons -->
+<div class="controls">
+  <button id="startBtn">Начать игру</button>
+  <button id="restartBtn" style="display: none;">Рестарт</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 NNS. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
